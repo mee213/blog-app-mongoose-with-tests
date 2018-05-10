@@ -89,7 +89,6 @@ describe('Blog Posts API resource', function() {
         .then(function(_res) {
           // so subsequent .then blocks can access response object
           res = _res;
-          console.log(res.body);
           expect(res).to.have.status(200);
           // otherwise our db seeding didn't work
           expect(res.body).to.have.lengthOf.at.least(1);
