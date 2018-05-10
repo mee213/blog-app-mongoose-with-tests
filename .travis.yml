@@ -2,3 +2,10 @@ language: node_js
 node_js: node
 services:
 - mongodb
+deploy:
+  provider: heroku
+  api_key:
+    secure: iSoUvTyLsEM9bekt3Re4oXVkHIZI0yyUtMTIBnEF2b6NInZucAnntBChkxf+e3idO/+N3MyJ4ZbWnWZTnQC/gYoXfu9rLKgJfgHeoXC7a81+u1fx+odXlLbHMo7gSMobUkWJ3+n5NRYwl2viRW7fEf2K29tm7yQQqRr7NN6/jKqhfieh/3646ZNlzeUtakuvHB0XPwvk/WGwZbl8znC7jo7lOi4zOV2Plx/3JxQatLGVHO2UWLI9q+2+9TMS+nFJO3EO47+xbbgKYVenrZtV4ctyr70H0RqwFeRdFj5Xbuj9oit0elnPhMv1ZHY/jDxUCu+4ObD5c9CBMF9Nm4DYqN9PW0FJ5GXTsxqi3q+zWQCrTBAHqhkxV1Uh73/ZcdY1K3D7LUzXOYrdVxOb1roVJzQbogv3HUIsR1kGFmA3p0NwtYCvH/yEbQ1mDoUXv62LCaDpmd0UryMAuvyCysfI3JR6A4GdX8CUtgG7JpUkbJWqn5+q+XTtwK9eeHKPnZjhkZjTf/b9Tgo56Epq3crakSQduMhSA6Qgo0pP2Kk+GQBQedwkD+4sadYwuMfjeJ1KE9F7Hi7ESAy5qm1J5cSSz755d5T9kwLDcmxq9byrsnYLJExe4RVKBuNMhWdfB59q4HAtjIREIYISO/3SF+HcHtgaJ7WevNUb63rCbcqEh88=
+  app: secret-journey-72889
+  on:
+    repo: mee213/blog-app-mongoose-with-tests
